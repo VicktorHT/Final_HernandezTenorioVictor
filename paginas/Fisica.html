@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<font face="helvetica" COLOR="white" SIZE=7>
+	<table border="0" width="100% height="50">
+		<td bgcolor="black"><img src="../img/A1 - copia.png" width="4%" height="3%" align="" valign="bottom">Cuestionario</td>
+	</table>
+	</font>
+	
+	<br>
+		<font face="helvetica" size="-1">
+
+
+
+
+
+
+
+
+
+
+			<html><head><meta http-equiv="AUTHOR" content="jvaamond@fresno.pntic.mec.es y crisdiaz@telecable.es">
+<title>Test generado con GenerTest</title>
+<br>
+Usa esta melodia de inspiración de Benvenuto Cellini.
+<br>
+<audio src="benvenuto-cellini.mp3" controls="controls" type="audio/mp3"></audio>
+<br>
+
+<script language="JavaScript">
+<!--
+var alfab="abcdefghijklmnñopqrstuvxyz"
+var nump=3
+var nrp=4
+function corrixe(){
+var acertos=0
+var sol=""
+fiestrar=open("","novar","width=300,height=350,scrollbars")
+fiestrar.document.write("<table border='0' width='100%' cellspacing='0' cellpadding='4' bgcolor='#FFFFF2'><tr><td><p align='center'>")
+for(i=1;i<=nump;i++){var senresp=true 
+	for(j=1;j<=nrp;j++){
+		if(eval("document.test.resp"+i+"["+(j-1)+"].checked")==true){
+			sol+=alfab.substring(j-1,j);senresp=false;break
+		}
+}
+if(senresp==true){sol+="-"}
+}
+var tempo= new Date()
+fiestrar.document.write("<br>Hora: "+tempo.getHours()+":"+tempo.getMinutes())
+fiestrar.document.write("<br>Fecha: "+tempo.getDate()+"/"+eval(tempo.getMonth()+1)+"/"+tempo.getYear())
+fiestrar.document.write("<p align='center'><table>")
+fiestrar.document.write("<tr><td colspan='4' align='center'><font size='5'>Resultados del test</font><p></td></tr>")
+fiestrar.document.write("<tr><td width='33' bgcolor='#FFF4F4'>"+
+"<p align='center'>Preg</td><td width='35' bgcolor='#FFF4F4' align='center'>"+
+"Solu</td><td width='35' bgcolor='#FFF4F4' align='center'>Resp</td>"+
+"<td width='35' bgcolor='#FFF4F4'><p align='center'>Resul</td></tr>")
+for(i=1;i<=sol.length;i++){
+	resposta=document.test.tras.value.substring(i-1,i)
+	solucion=sol.substring(i-1,i)	
+	if(resposta==solucion){
+	acertos+=1
+	fiestrar.document.write("<tr><td align='center'>"+i+
+	"</td><td align='center'>"+resposta+"</td><td align='center'>"+solucion+
+	"</td><td align='center'><font color='#009933'>acierto</font></td></tr>")
+	}
+	else{
+	fiestrar.document.write("<tr><td align='center'>"+i+"</td><td align='center'>"+resposta+
+	"</td><td align='center'>"+solucion+"</td><td align='center'><font color='#FF0000'>fallo</font></td></tr>")
+	}
+}
+nota=10/nump*acertos;
+if(Math.floor(nota)!=Math.ceil(nota)){cadea=""+nota;for(var i=0;i<=cadea.length;i++){
+if(cadea.charAt(i)=="."){nota=cadea.substring(0,i+3);break;}}}
+fiestrar.document.write("<tr><td colspan='4' align='center'>Aciertos: "+acertos+" de "+nump+"</td></tr>")
+fiestrar.document.write("<tr><td colspan='4' align='center'>Nota: "+nota+"</td></tr>")
+fiestrar.document.write("</td></tr><tr><td colspan='4' align='center'><p><form><input type='button' value='Cerrar' name='pecharf' onClick='window.close()' style='background-color: #FFCC66'></form></td></tr></table></td></tr></table>")
+fiestrar.document.write("</table>")
+fiestrar.document.close()
+}
+// -->
+</script></head>
+<body>
+<form name="test">
+<table width="100%"><tbody><tr><td align="center"><table>
+<tbody><tr>
+<td>
+<p align="center">Responde correctamente este Test de aprendizaje:</p></td>
+</tr></tbody></table></td></tr><tr><td>
+
+<table><tbody><tr><td><font size="4" color="#FF00FF">1.</font></td><td bgcolor="#F2FFF2" width="100%">¿Cuál es la sensación de vigurosa que los artista deseaban sentir al contemplar la escultura?</td></tr></tbody></table>
+<table><tbody><tr><td width="25">&nbsp;</td><td>a) </td><td>Arrogancia y esperanza<input type="radio" name="resp1"></td><td></td></tr></tbody></table>
+<table><tbody><tr><td width="25">&nbsp;</td><td>b)Amor y paz</td><td><input type="radio" name="resp1"></td><td></td></tr></tbody></table>
+<table><tbody><tr><td width="25">&nbsp;</td><td>c)Elegancia y poder </td><td><input type="radio" name="resp1"></td><td></td></tr></tbody></table>
+<table><tbody><tr><td width="25">&nbsp;</td><td>d)Empatico y Sensualidad </td><td><input type="radio" name="resp1"></td><td></td></tr></tbody></table>
+
+<table><tbody><tr><td><font size="4" color="#FF00FF">2. </font></td><td bgcolor="#F2FFF2" width="100%">¿Qué artista contribuyo al creacion de esta escultura de arte?</td></tr></tbody></table>
+<table><tbody><tr><td width="25">&nbsp;</td><td>a)Enrique de Navarra </td><td><input type="radio" name="resp2"></td><td></td></tr></tbody></table>
+<table><tbody><tr><td width="25">&nbsp;</td><td>b)Benvenuto Cellini</td><td><input type="radio" name="resp2"></td><td></td></tr></tbody></table>
+<table><tbody><tr><td width="25">&nbsp;</td><td>c)Gian Lorenzo Bernini</td><td><input type="radio" name="resp2"></td><td></td></tr></tbody></table>
+<table><tbody><tr><td width="25">&nbsp;</td><td>d)Michelangelo Merisi da Caravággio </td><td><input type="radio" name="resp2"></td><td></td></tr></tbody></table>
+
+<table><tbody><tr><td><font size="4" color="#FF00FF">3. </font></td><td bgcolor="#F2FFF2" width="100%">¿Cuál es la sedimentación original del mármol en su estado natural?</td></tr></tbody></table>
+<table><tbody><tr><td width="25">&nbsp;</td><td>a)Feldespato de gioclasa </td><td><input type="radio" name="resp3"></td><td></td></tr></tbody></table>
+<table><tbody><tr><td width="25">&nbsp;</td><td>b)Neisico Bandamiento </td><td><input type="radio" name="resp3"></td><td></td></tr></tbody></table>
+<table><tbody><tr><td width="25">&nbsp;</td><td>c)Placita de palaz </td><td><input type="radio" name="resp3"></td><td></td></tr></tbody></table>
+<table><tbody><tr><td width="25">&nbsp;</td><td>d)Carbonato de calcio </td><td><input type="radio" name="resp3"></td><td></td></tr></tbody></table>
+
+
+</td></tr>
+<tr><td align="center" height="50"><input type="hidden" value="cbd" name="tras">
+<input type="button" value="Puntuación" name="resultados" onclick="corrixe()" style="background-color: #FFCC66">
+<input type="reset" value="Limpiar" name="limpar" style="background-color: gray"></td></tr>
+</tbody></table></form>
+
+</body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</font>
+</body>
+</html>
